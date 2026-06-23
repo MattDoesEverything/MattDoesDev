@@ -40,8 +40,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
-    "predeploy": "npm run web",
-    "deploy": "gh-pages -d deploy"
+    "predeploy": "npx expo export:web",
+    "deploy": "gh-pages -d web-build"
   },
   "private": true
 }
