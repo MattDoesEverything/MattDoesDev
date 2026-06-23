@@ -37,6 +37,7 @@
       ]
     ],
     "experiments": {
+      "baseUrl": "/expo-gh-pages",
       "typedRoutes": true,
       "reactCompiler": true
     }
