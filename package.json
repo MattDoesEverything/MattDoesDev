@@ -2,6 +2,7 @@
   "name": "mattdoesdev",
   "main": "expo-router/entry",
   "version": "1.0.0",
+  "homepage": "https://MattDoesEverything.github.io/MattDoesDev/",
   "dependencies": {
     "@expo/ui": "~56.0.18",
     "expo": "~56.0.12",
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "@types/react": "~19.2.2",
+    "gh-pages": "^6.3.0",
     "typescript": "~6.0.3"
   },
   "scripts": {
@@ -37,7 +39,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "predeploy": "npm run web",
+    "deploy": "gh-pages -d dist"
   },
   "private": true
 }
